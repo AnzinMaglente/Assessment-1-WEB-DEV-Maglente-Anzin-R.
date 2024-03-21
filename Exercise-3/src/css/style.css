@@ -1,0 +1,82 @@
+header { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+    min-height: 60px;
+    background-color: rgb(213, 213, 213);
+    color: black;
+}
+
+.main {
+    height: 60px;
+    max-width: 1200px;
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.primary-navigation {
+    display: flex;
+}
+
+.secondary-navigation {
+    display: flex;
+    gap: 2rem;
+}
+
+.secondary-navigation li, .secondary-navigation li a  {
+    text-decoration: none;
+    list-style: none;
+}
+
+.title{
+    padding-top: 15px;
+    padding-bottom: 2px;
+    text-align: center;
+}
+
+body {
+    text-size-adjust: 10px; 
+    /* when the first font size selected is not available, this property changes 
+    the size to a secondary specified font size. */
+    margin: 100px auto;
+    width: max-content;
+}
+
+.body_main {
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+
+img { 
+    height: 200px;
+    width: 200px;
+    position: center; 
+    /* position specifies the method of postioning used for an element. */
+}
+
+.picture-1 {
+    width: 200px;
+    height: 200px;
+    filter: grayscale(80%);
+    /* Filters are used to apply graphical effects like blur, colorshift, and etc. 
+    Grayscale changes the colors of the image to use black and whites. */
+}
+
+.picture-2 {
+    width: 200px;
+    height: 200px;
+    filter: invert(100%);
+    /* This inverts the samples in the input image. */
+}
+
+.picture-3 {
+    width: 200px;
+    height: 200px;
+    filter: contrast(200%);
+    /* This adds contrast to the image. */
+}
