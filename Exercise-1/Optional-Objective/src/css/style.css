@@ -1,0 +1,111 @@
+* {
+    background-color: rgb(25, 7, 76);
+    color: whitesmoke;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* box-sizing include the padding and border in an element's total width and height. */
+    min-height: 40px;
+}
+
+.main-nav {
+    padding-top: 5px;
+    height: 120px;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family specifies a priority list to how the text looks like using premade 
+    fonts. */
+    font-size: 32; 
+    /* font-size sets the size of the text. */
+    text-align: center;
+    display: block;
+    /* display block starts on a new line, and takes up the whole width */
+    margin: auto;
+}
+
+h3 {
+    font-style: italic;
+    text-decoration-line: underline;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+pre {
+    margin-top: 0;
+    margin-left: -90;
+}
+
+.normal {
+    font-style: normal;
+    text-decoration: none;
+}
+.primary-navigation {
+    display: flex;
+}
+
+.secondary-navigation {
+    display: flex;
+    gap: 2rem;
+    margin:auto;
+    margin-left: 31.5%;
+    margin-bottom: 5px;
+}
+
+.secondary-navigation li, .secondary-navigation li a  {
+    text-decoration: none;
+    list-style: none;
+}
+
+a:link {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+a:visited {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+article {
+    width: 90%;
+    height: auto;
+    padding-left: 10%;
+}
+
+.content {
+    height: auto;
+    margin: auto;
+    gap: 5rem;
+    display: flex;
+}
+
+.section-1 {
+    text-align: justify;
+    width: 42%;
+    height: auto;
+}
+
+.section-2 {
+    text-align: justify;
+    width: 42%;
+    height: auto;
+}

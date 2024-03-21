@@ -1,0 +1,389 @@
+<!--
+HTML and CSS Resource (Bonus - Optional)
+- Create a HTML & CSS quick-reference guide that covers all of the tags we've covered so far (and a few extras) with a description of how to use 
+them and code examples.
+- Use an external stylesheet.
+- Be creative with your styling, but keep it professional.
+- Use the <code> and <pre> HTML tags to include code examples.
+- Include a minimum of 10 HTML tags.
+- Include a minimum of 8 CSS properties.
+- Include a variety of different headers.
+- Make sure the code is indented and spaced properly.
+
+Using this website as a reference:
+    https://www.allrecipes.com/recipe/10281/chewy-chocolate-cookies-ii/
+    https://www.bettycrocker.com/recipes/ultimate-chocolate-chip-cookies/77c14e03-d8b0-4844-846d-f19304f61c57
+-->
+
+<!-- I do not believe I need to explain anything from here considering that the html
+already explains what it does but if the need to arises, I will add a comment. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\src\css\style.css">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <header>
+        <div class="main-nav">
+        <h1>HTML and CSS Reference</h1>
+            <nav class="primary-navigation" data-visible="false">
+                <ul class="secondary-navigation">
+                    <li><a href="#HTML-basics">HTML Basics</a></li>
+                    <li><a href="#HTML-tags">HTML Tags</a></li>
+                    <li><a href="#CSS-basics">CSS Basics</a></li>
+                    <li><a href="#CSS-properties">CSS Properties</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <br>
+
+    <article>
+        <h2 id="HTML-basics">HTML Basics</h2>
+        <div class="content">
+            <div class="section-1">
+                <h3>&lt;head&gt; Tag</h3>
+                The head tag is where you will find all of the meta data about the website, stuff that you wouldn't see normally unless you go through the website's code. This can be the tab name, language when booting up, and external files.
+
+                <h4>Example:</h4>
+                <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+  &lt;title&gt;TitleofPage&lt;/title&gt;
+&lt;/head&gt;
+                </code></pre>
+                <h4>Output:</h4>
+                <br>
+                This adds a link to an external stylesheet, change the content based on the device width, add a title to the page, and more.
+                
+                <br><br>
+
+                <h3>&lt;a&gt; Tag</h3>
+                The &lt;a&gt; Tag is used to create a hyperlink to another page/part of the website, the link is specified in the href attribute where if you click on the content it is on, it will lead you to somewhere else. 
+                <h4>Example:</h4>
+                <pre><code>
+&lt;a href="https://metaverseage.ae/"&gt;Click on me to go to the metaverse page.&lt;/a&gt;
+                </code></pre>
+                <h4>Output:</h4>
+                <br>
+                <a href="https://metaverseage.ae/">Click on me to go to the metaverse page.</a>
+
+                <br><br><br><br><br><br>
+
+                <h2 id="HTML-tags">HTML Tags</h2>
+                <h3>&lt;button&gt; Tag</h3>
+                The button tag defines a clickable button, it has several attributes: autofocus, disable, type, value.
+
+                <h4>Example:</h4>
+                <pre><code>
+&lt;button type="button"&gt;This is a button&lt;/button&gt;
+                </code></pre>
+                <h4>Output:</h4>
+                <br>
+                <button type="button">This is a button</button>
+
+                <br><br>
+
+                <h3>&lt;!--&gt; Tag</h3>
+                The &lt;!--&gt; Tag is used to add comments in the code.
+                <h4>Example:</h4>
+                <pre><code>
+Hello, this is a normal line.
+&lt;!--This is a comment line--&gt;
+                </pre></code>
+                <h4>Output:</h4>
+                <br>
+                Hello, this is a normal line.
+                <!--This is a comment line-->
+
+                <br><br><br><br><br><br>
+
+                <h2 id="CSS-basics">CSS basics</h2>
+                <h3>What are Selectors?</h3>
+                Selectors are patterns use to select and style HTML elements. There are more than 60 selectors and five combinators that can be used to provide specific rules for the elements. 
+
+                <h4>Example:</h4>
+                <pre><code>
+&lt;style&gt;
+    .sample {
+        color: white;
+        background-color: black;
+    }
+&lt;/style&gt;
+
+&lt;div class="sample"&gt;Hello world&lt;/div&gt;
+            </code></pre>
+            <h4>Output:</h4>
+            <style>
+            /* This is an internal css, it is a popular option for single page websites.
+            It is being used to show off how would the css look like to a beginner in this
+            context.
+
+            There are ways to style your html, such as external css where you use a 
+            different file, it is considered to be good practice to web developers. 
+            And lastly, inline css, mainly used for debugging purposes. */
+                .sample {
+                    color: white;
+                    background-color: black;
+                }
+            </style>
+            <div class="sample">Hello World</div>
+
+            <br><br>
+
+                <h2 id="CSS-properties">CSS properties</h2>
+                <h3>Height and Width properties</h3>
+                Height and Width is used to set the height and width of an element. This can be specified by pixels or percentages.
+
+                <h4>Example:</h4>
+                <pre><code>
+&lt;style&gt;
+    .hw {
+        height: 50px;
+        width: 50%;
+        background-color: purple;
+    }
+&lt;/style&gt;
+
+&lt;div class="hw"&gt;Hello world&lt;/div&gt;
+                </code></pre>
+                <h4>Output:</h4>
+                <style>
+                    .hw {
+                        height: 40px;
+                        width: 50%;
+                        background-color: purple;
+                    }
+                </style>
+                <br>
+                <div class="hw">This has a height of 40 pixels and a width of 50%</div>
+
+                <br><br>
+
+                <h3>&lt;color&gt; property</h3>
+                The color property changes the color of text.
+                <h4>Example:</h4>
+                <pre><code>
+&lt;style&gt;
+    .color-test {
+        font-size: 20px;
+        color: Red;
+    }
+&lt;/style&gt;
+
+&lt;div class="color-test"&gt;I am Red!&lt;/div&gt;
+                </code></pre>
+                <h4>Output:</h4>
+                <style>
+                    .color-test {
+                        font-size: 20px;
+                        color: Red;
+                    }
+                </style>
+                <div class="color-test">I am Red!</div>
+
+                <br><br>
+
+                <h3>&lt;Padding&gt; property</h3>
+                The padding tag sets a specific spacing between the items within the element. You can specify if you want the padding to be left, right, top, or bottom. However, if you only indicate padding, it will apply the padding to all directions
+                <pre><code>
+&lt;style&gt;
+    .padding-test {
+        color: white;
+        background-color: red;
+        padding: 30px;
+    }
+&lt;/style&gt;
+
+&lt;div class="padding-test"&gt;I have 30 pixels of padding&lt;/div&gt;
+                </code></pre>
+                <h4>Output:</h4>
+                <style>
+                    .padding-test {
+                        color: white;
+                        background-color: red;
+                        padding: 30px;
+                    }
+                </style>
+                <div class="padding-test">I have 30 pixels of padding</div>
+            </div>
+            
+            <div class="section-2">
+                <h3>Heading Tags</h3>
+                Heading tags are defined as &lt;h1&gt; to &lt;h6&gt; tags. It helps change the font size of each text, h1 being the most important while h6 being the least important.
+                <h4>Example:</h4>
+                <pre><code>
+&lt;h2&gt;Hello world&lt;/h2&gt;
+&lt;h3&gt;Hello world&lt;/h3&gt;
+&lt;h4&gt;Hello world&lt;/h4&gt;
+                </code></pre>
+                <h4>Output:</h4>
+                <h2 class="normal">Hello world</h2>
+                <h3 class="normal">Hello world</h3>
+                <h4 class="normal">Hello world</h4>
+
+                <br><br>
+                
+                <h3>&lt;img&gt; Tag</h3>
+                img tags are used to add any image format (jpeg, jpg, png, etc) to the website for viewers to see, there are four attributes you can change in this tag. The source file (src), alternative text (alt), width, and height.
+                <h4>Example:</h4>
+                <pre><code>
+&lt;img src="cat photo" alt="Meow" width=100px height=100px &gt;
+                </code></pre>
+                <h4>Output:</h4>
+                <br>
+                <img src=".\src\media\cat-photo.jpeg" alt="Meow" width=100px height=100px>
+
+                <br><br><br><br>
+
+                <h3>&lt;br&gt; Tag</h3>
+                The br tag or break tag inserts a single break line to the text.
+
+                <h4>Example:</h4>
+                <pre><code>
+Hello, I am Anzin Maglente
+&lt;br&gt;&lt;br&gt;
+How are you?
+                </code></pre>
+                <h4>Output:</h4>
+                <br>
+                Hello, I am Anzin Maglente
+                <br>
+                How are you?
+
+                <br><br>
+
+                <h3>&lt;ul&gt; Tag</h3>
+                The ul tag creates an unordered list with the il tag to make each item in the list.
+
+                <h4>Example:</h4>
+                <pre><code>
+&lt;ul&gt;
+    &lt;li&gt;Yeast&lt;\li&gt;
+    &lt;li&gt;Baking Soda&lt;\li&gt;
+    &lt;li&gt;Flour&lt;\li&gt;
+&lt;/ul&gt;
+                </code></pre>
+                <h4>Output:</h4>
+                <ul>
+                    <li>Yeast</li>
+                    <li>Baking Soda</li>
+                    <li>Flour</li>
+                </ul>
+
+                <br>
+
+            <h3>&lt;comment&gt; Tag</h3>
+            The comment tags are used to explain pieces of code.
+            <h4>Example:</h4>
+            <pre><code>
+&lt;style&gt;
+    p {
+        color: red;
+    }
+    /* This is a single-line comment */
+&lt;/style&gt;
+
+&lt;p&gt;Hello world&lt;/p&gt;
+            </code></pre>
+            <h4>Output:</h4>
+            <style>
+                p {
+                    color: red;
+                }
+                /* This is a single-line comment */
+            </style>
+            <p>Hello World</p>
+
+            <br><br><br><br>
+            
+            <h3>Font properties</h3>
+                There are several font tags that changes how text is displayed, font-family, font-size, font-style and more.
+
+                <h4>Example:</h4>
+                <pre><code>
+&lt;style&gt;
+    .text-example {
+        font-family: Tahoma;
+        font-style: italic;
+        font-size: 20px;
+    }
+&lt;/style&gt;
+<br>
+&lt;div class="text-example"&gt;Hello World&lt;/div&gt;
+                </code></pre>
+                <h4>Output:</h4>
+                <style>
+                    .text-example {
+                        font-family: Tahoma;
+                        font-style: italic;
+                        font-size: 20px;
+                    }
+                </style>
+                <br>
+                <div class="text-example">Hello World</div>
+
+                <br><br>
+            
+                <h3>background-color property</h3>
+                background-color specifies the background color of an element.
+                <h4>Example:</h4>
+                <pre><code>
+&lt;style&gt;
+    .backgroundcolor-example {
+        color: white;
+        background-color: blue;
+    }
+&lt;/style&gt;
+<br>
+&lt;div class="backgroundcolor-example"&gt;I am living in a blue world!&lt;/div&gt;
+                </code></pre>
+                <h4>Output:</h4>
+                <style>
+                    .backgroundcolor-example {
+                        color: white;
+                        background-color: blue;
+                    }
+                </style>
+                <br>
+                <div class="backgroundcolor-example">I am living in a blue world!</div>
+
+                <br><br>
+            
+                <h3>Margin property</h3>
+                Margins are used to create space around the element outside it's defined borders, how they interact with other elements.
+
+                <h4>Example:</h4>
+                <pre><code>
+&lt;style&gt;
+    .margin-example {
+        margin: 20px;
+    }
+&lt;/style&gt;
+<br>
+&lt;div class="margin-example"&gt;Hello World&lt;/div&gt;
+                </code></pre>
+                <h4>Output:</h4>
+                <style>
+                    .margin-example {
+                        margin: 20px;
+                    }
+                </style>
+                <br>
+                <div class="margin-example">I have a margin of 20 pixels</div>
+            </div>
+        </div>
+    </article>
+</body>
+</html>

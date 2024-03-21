@@ -1,0 +1,78 @@
+header { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans", sans-serif;;
+    min-height: 60px;
+    background-color: rgb(255, 251, 30);
+    color: black;
+}
+
+.main {
+    height: 60px;
+    width: 1300px; 
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.primary-navigation {
+    display: flex;
+}
+
+.secondary-navigation {
+    display: flex;
+    gap: 2rem;
+}
+
+.secondary-navigation li, .secondary-navigation li a  {
+    text-decoration: none;
+    list-style: none;
+}
+
+.plot_summary {
+    height: 140px;
+    width: 600px; 
+    align-items: center;
+    margin: auto;
+    text-align: justify;
+}
+
+.Characters {
+    height: 300px;
+    width: 600px; 
+    align-items: center;
+    margin: auto;
+    text-align: justify;
+}
+
+.Company {
+    height: 160px;
+    width: 600px; 
+    align-items: center;
+    margin: auto;
+    text-align: justify;
+}
+
+.Reviews {
+    height: 60px;
+    width: 600px; 
+    align-items: center;
+    margin: auto;
+    text-align: justify;
+}
+
+.content {
+    height: 60px;
+    width: 1000px; 
+    display: block;
+    align-items: center;
+    margin: auto;
+    text-align: justify;
+}
+
+.content pre {
+    font-size: 14px;
+}

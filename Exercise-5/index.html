@@ -1,0 +1,61 @@
+<!--
+Embed Video
+Embed a locally hosted video of your choice into a html document. The video must:
+    - Loop;
+    - Display a relevant poster image;
+    - Be centred on the page horizontally and vertically.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\src\css\style.css">
+    <title>Exercise 5</title>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="page_title">
+                <h1>Exercise 5: Video</h1>
+            </div>
+            <nav class="primary-navigation" data-visible="false">
+                <ul class="secondary-navigation">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Exercises</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="center">
+        <h1>My Piano Recital</h1>
+    </div>
+
+    <div class="main-video">
+        <span>
+            <video width="800" height="400" controls loop poster=".\src\video\poster.jpeg">
+                <source src=".\src\video\piano-recital.mp4" type="video/mp4">
+                <!-- the <source> tag is used to find different media resources 
+                to be used in the html file. Like photos, videos, and audio. -->
+            </video>
+            <!-- the <video> tag is used to embed video content in the html file
+                when there are more than 1 source specified, it will try to use the
+                first source before the rest.
+
+                Some of the notable properties of video are:
+                    - controls allows users to control how the video is played, like
+                    adding a pause or play button.
+                    - loop sets the video to loop after it is finished playing.
+                    - poster allows the video to have a thumbnail.
+                    - autoplay will play the video as soon as it is ready.
+            --> 
+        </span>
+        <!-- the <span> tag is an inline container used to mark up plain text -->
+    </div>
+
+    <hr>
+    
+</body>

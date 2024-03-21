@@ -1,0 +1,119 @@
+<!-- 
+One-page website ☑️
+Pick a television series, film or game and design a really simple one-page website (just text, no images). Your website should include:
+    - An overview of the plot, key information, cast and/or creative team, characters and any reviews you can find.
+    - A nav bar at the top which allows the user to quickly navigate to sections further down the page (anchor Ids).
+    - A link to the actual website of the film/game etc. which opens in a new tab when clicked.
+    - Use of an external CSS file to style elements creatively (avoid inline styling and use classes instead).
+    - At least two classes.
+    - One link styled as a button.
+
+Multi-page website (Bonus - Optional)
+Using the one-page website you created, clone it into a new directory and split the information down into a simple multi-page website.
+
+An individual page for: plot, key information, cast and/or creative team, characters and any reviews you can find.
+Put your new pages in a subdirectory called "pages".
+Ensure that each page has a navigation bar.
+!-->
+
+<!-- 
+References:
+    https://www.coursehero.com/lit/Winnie-the-Pooh/character-analysis/
+    https://time.com/4070681/winnie-the-pooh-history/
+    https://winniethepooh.disney.com/tigger
+    https://www.imdb.com/title/tt0165052/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\pages\src\css\style.css">
+    <title>Exercise 2</title>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="page_title">
+                <h1>Christopher Robin (film)</h1>
+            </div>
+            <nav class="primary-navigation" data-visible="false">
+                <ul class="secondary-navigation">
+                    <li><a href="#Plot">Learn The Story</a></li> <!-- In the <a> tag, a hastag link can be found, this is so that the page can skip to that specific section using tags. -->
+                    <li><a href="#Characters">Meet The Hundred Acre Woods</a></li>
+                    <li><a href="#Company">Behind The Film</a></li>
+                    <li><a href="#Reviews">Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <hr>
+
+    <div class="plot_summary">
+        <h3 id="Plot">Learn The Story</h3> 
+        <!-- This is the first id, whenever you click on the "Learn the Story" navigation, 
+            it would lead you here. -->
+        An adult Christopher Robin who now burdened by an white collar job that prevents him from spending quality time with his family, rediscovers the beauty of his childhood and the joys of life after meeting his childhood friend Winnie the Pooh. He return to the Hundred Acre Wood to help find Pooh's lost friends.
+        <br><br> 
+        <!-- The br tag inserts a line break. -->
+        <a href="./pages/Plot.html">Click here to read more!</a>
+    </div>
+
+    <br><hr>
+
+    <div class="Characters">
+        <h3 id="Characters">Meet The Hundred Acre Woods</h3>
+        Pooh - The lovable, kind-hearted, honey-loving bear known as Winnie The Pooh. He loves to hum during his adventures with his pals and may not be the smartest in the group but makes up for it by being himself!
+        <br>Christopher Robin - A boy who used to be level-headed and kind, but due to growing up. He had forgotten all of his dreams when he was little.
+        <br>Piglet - The small and very anxious Piglet who is often by Pooh's side through thick and thin, no matter how scary the adventure might be.
+        <br>Tigger - Being so energetic and eccentric, Tiger is known for wanting to try out new things with his pals whether they like it or not.
+        <br>Rabbit - A stoic yet thoughtful friend who is bossy and loves to be correct.
+        <br>Eeyore - The downtroughten, gloomy donkey who just wants to be left alone.
+        <br>Kanga - The mother figure of the friends, she loves to bake and is the mother of Roo.
+        Roo - Tiger's Sidekick who is youthful and has a curiousity for exploring the world.
+        <br><br>
+        Learn more about who they are and what they like and dislike! Click <a href="./pages/Characters.html">here!</a>
+    </div>
+
+    <br><hr>
+
+    <div class="Company">
+        <h3 id="Company">Behind The Film</h3>
+        This film that focused around an adult Christopher Robin was initially pitched to Disney at 2003 by Brigham Taylor whom was inspired by the last chapter of The House at Pooh Corner, however due to other the production of other Winnie the Pooh films, it was pushed back by 2015. The project was meant be "strong elements of magical realism as it seeks to tell an emotional journey with heartwarming adventure."
+        <br><br>
+        To learn more about the cast, click <a href="./pages/Company.html">here!</a>
+    </div>
+
+    <br><hr>
+
+    <div class="Reviews">
+        <h3 id="Reviews">Reviews</h3>
+        ★7/10
+        <h4>Nostalgia</h4>
+        ThomasDrufke22 - August 2018
+        <br><br>
+        "Christopher Robin got next to zero marketing and had little buzz surrounding its release. It's almost as if Disney wanted to put their efforts elsewhere because they weren't sure on who to market the film to. Well, to their credit, that's exactly how the movie felt to me. A mixture of adult themes with characters acting to cater towards children is a difficult line to market to. Especially since it's almost impossible to define who the actual target audience would be, even after I've seen it. Even with that said, I really adored this film. Full of nostalgia from familiar voices to just the satisfying feeling of watching a old fashioned Disney story unfold in live action form. Winnie the Pooh is an all-time great character in the Disney lore and he is beyond perfect in this film, with Jim Cummings returning to do voiceover once again. Does it take a little bit to get going? Sure, but it finishes with dazzle. The magic of Christopher Robin and the Hundred Acre Wood is absolutely back.
+        <br><br>
+        7.8/10"
+        <br><br>
+        ★8/10
+        <h4>It was great to relive my childhood...</h4>
+        kimiemegan22 - August 2018
+        <br><br>
+        "This was the first movie in ages where they did not focus on a romantic relationship but rather exploring relationships between friendship and family. Though, I do believe that the movie isn't suiting for very young viewers. As it might seem boring to them or rather the message conveyed isn't about them. Christopher Robin forgets about being happy due to his workaholic nature, this could really relate more to high school, college or working people. But, overall it's a great movie! It's great for laughs, reminiscing and a little tears"
+        <br><br>
+        ★10/10
+        <h4>Truly Great</h4>
+        muvbuff-4573717 - August 2018
+        <br><br>
+        "Christopher Robin is a truly great and heartwarming film about the importance of family and friends on one's life. Not only written incredibly well and acted perfectly, the film has a lot of realism to it, even with talking stuffed animals as part of the cast. Blending very real everyday hardships with fantasy gives the film a contrasting look at how bleak the world is when we don't realize what is truly important and tells us to remember our childhoods and try to be a better parent by being a kid with your kids. Overall, the film displays a heartfelt message with a cast of fun characters from an iconic series and does so very well and I suggest you go out and see this movie.
+        <br>
+        <hr><br>
+        <button><a href="https://www.imdb.com/title/tt4575576/">Go to the Original Page</a></button> 
+        <!-- the button tag creates a clickable button in the web page. -->
+    </div>
+</body>
+</html>

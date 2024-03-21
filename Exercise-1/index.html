@@ -1,0 +1,144 @@
+<!-- 
+    Recipe page ☑️
+        - Create a web page containing information on your favourite recipe. The page should include
+        - Appropriate tags to structure text (e.g. h and p tags).
+        - A h1 tag for the recipe name
+        - A p tag for a description of the recipe
+        - A h2 tag for the ingredients
+        - An unorder list for the ingredients
+        - An h2 tag for the method
+        - An order list for the steps involved in the recipe 'method'
+        - Make sure the code is indented and spaced properly.
+        - Add comments explaining what each element does.
+
+    Using this website as a reference:
+            https://www.allrecipes.com/recipe/10281/chewy-chocolate-cookies-ii/
+            https://www.bettycrocker.com/recipes/ultimate-chocolate-chip-cookies/77c14e03-d8b0-4844-846d-f19304f61c57
+ -->
+
+<!DOCTYPE html> <!-- This identifies the code as a html file. -->
+<html lang="en"> <!-- This sets the default language to en/English. -->
+
+<head> <!-- This creates meta data that cannot be seen in the actual website. -->
+    <meta charset="UTF-8"> <!-- This sets the encoding form used in the file. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This specifies the area used to display the content as of right now it is on 
+    it's default mode. -->
+    <link rel="stylesheet" href=".\src\css\style.css">
+    <!-- This references another file for the cascading style sheet. -->
+    <title>Exercise 1</title>
+    <!-- This shows up as the header of the web page which you can see on your navigation 
+    bar. -->
+</head> <!-- Any tag that has a "/" before them closes the tag and it's contents. -->
+
+<!--
+    Extra information on attributes:
+        html makes clear that the code is an html file.
+        lang is short for language, it is used to set the default language to English.
+        name specifies a name for an HTML element.
+        content gives the value associated with the http-equiv or name attribute.
+        rel defines the relationship between a linked resource and the current document.
+        href specifies a link destination.
+        class is used to point to a class name in a style sheet.
+        src specify the location of an external resource in HTML.
+-->
+
+<body> <!-- This starts the content of the website or what can be seen in the website. -->
+    <header> <!-- The header contains the introductory content or navigational links for 
+        the website. -->
+        <div class="main">
+            <!-- This is a <div> element used to group lines of code together, main is used 
+            to group together the header of the website. -->
+            <div class="page_title">
+                <h1>Exercise 1: Recipe Page</h1>
+                <!-- the <h1> tag changes the size of font used in the text, it represents 
+                    heading 1. There are 6 different headings, 1 represents the most 
+                    important, while 6 represents the least important -->
+            </div> 
+            <!-- From time to time you'll see a tag with a backslash, that means it closes
+            a previous tag for example this closes the page_title div. -->
+            <nav class="primary-navigation"> 
+            <!-- The <nav> tag specifies that majority of code are navigation links. -->
+                <ul class="secondary-navigation">
+                    <!-- The <ul> tag creates an unordered list and in this particular 
+                    instance it is used to create a margin between the words. -->
+                    <li><a href="">Home</a></li>
+                    <!-- The <li> tag specifies one item of a list -->
+                    <li><a href="">About</a></li>
+                    <!-- the <a href> tag allows the page to link to somewhere else.
+                    As of right now the links go to nowhere because no link is specified
+                    in the href -->
+                    <li><a href="">Exercises</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="recipe_photo">
+        <img src="chocolate_cookies.jpeg" width="100%" height="30%">
+        <!-- The <img> tag is used to display an image, where you can specify it's width 
+        and height using precise pixels or percentages. -->
+    </div>
+
+    <div class="title">
+        <h1>Homemade Chocolate Chip Cookies</h1>
+    </div>
+    <div class="description">
+        Soft and chewy Chocolate chip cookies with a brownie-like texture that overwhelms your mouth with it's warm
+        flavor.
+    </div>
+    <div class="basic_information">
+        <li>Servings: 48 servings</li>
+        <li>Prepping Time: 15 mins</li>
+        <li>Cooking time: 10 mins</li>
+    </div>
+
+    <hr> 
+    <!-- the hr or the horizontal rule tag creates a horizontal line across the page to 
+    separate content. -->
+
+    <div class="main_body"> 
+        <!-- The main body tag is used to separate the content to two columns, one for
+        the indredients, while the other for the procedure -->
+        <div class="ingredients">
+            <h2>Ingredients:</h2> 
+            <!-- The h2 tag changes the font size to something smaller than h1. -->
+            <li>2 1/4 cups Gold Medal all-purpose flour</li>
+            <li>1 teaspoon baking soda</li>
+            <li>1/2 teaspoon salt</li>
+            <li>1 cup butter, softened</li>
+            <li>3/4 cup granulated sugar</li>
+            <li>3/4 cup packed brown sugar</li>
+            <li>1 egg</li>
+            <li>1 teaspoon vanilla</li>
+            <li>2 cups semisweet chocolate chips</li>
+            <li>1 cup coarsely chopped nuts, if desired</li>
+        </div>
+        <div class="procedure">
+            <h2>Procedure:</h2>
+            <li>Pre-heat the oven to 375°F. and in a small bowl, mix flour with baking soda and salt. Set it aside.</li>
+            <li>Then in large bowl, mix softened butter and sugars with either an electric mixer on medium speed or a
+                spoon for about 1 minute or until fluffy, scraping side of bowl occasionally. And then beat in the egg
+                and vanilla until it feels smooth.</li>
+            <li>Stir in flour mixture just until blended (dough will be stiff). Stir in your main indrediants (Mainly
+                the chocolate chipe).</li>
+            <li>And unto ungreased or parchment-lined cookie sheets, drop dough by rounded tablespoonfuls 2 inches
+                apart.</li>
+            <li>Lastly, bake 8 to 10 minutes or until light brown (centers will be soft). Cool 2 minutes; remove from
+                cookie sheet to cooling rack. Cool completely, about 30 minutes. Store covered in airtight container.
+            </li>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="Tips_Variations">
+        <h2>Tips and Variations:</h2>
+        Spice up your dish by trying out different ingredients, replace the chocolate chips with white vanilla, add nuts
+        to the mix, lightly sprinkle some toppings, and more. There's an endless combinations of flavor you can try!
+    </div>
+
+    <br>
+    <hr>
+</body>
+</html>

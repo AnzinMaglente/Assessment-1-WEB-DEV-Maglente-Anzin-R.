@@ -1,0 +1,181 @@
+<!--
+Alan Partridge Soundboard (Bonus - Optional)
+A local comedy radio show needs you to develop an audio soundboard for them. The soundboard will display a grid of 
+Alan Partridge samples. When a sample is clicked the associated audio file will play. The audio samples for this 
+exercise are located in Exercises/Audio Sampler. Your sampler must:
+    - Include all of the samples in the Audio Sampler directory;
+    - Display all samples on a single non-scrolling page;
+    - Make use of correct semantic markup;
+    - Display the correct sample name;
+    - Change the colour of the background, and text, when the user hovers over a sample;
+    - Include index.html, style.css and index.js files;
+    - Include creative styling for your background, sample buttons, fonts and hover effects;
+    - Use the below example as a reference:
+
+Further Extension Problems
+  - The radio show loved the sampler you made for them before, but they'd like to give a more advanced system a go. In a new directory, build on top of your previous sampler and include the following new ideas:
+  - The show would like to include a text to speech feature. This feature allows presenters to type any text they like into a <textarea> element and have it converted to audio which then plays immediately. This new feature should be displayed in a seperate column next to the audio samples (see image below for reference);
+  - The show would like to include more audio samples. However, they only want sampler to display nine samples at a time. Create a system whereby the team can use "left" and "right" arrows to scroll through an extended bank of samples. The team is open to your creative ideas as to what audio is included on these new pages. When the first page is displayed, the "left arrow" should be hidden, and when the last page is displayed the "right" arrow should be hidden (prevents users from scrolling to blank sample pages or encountering errors);
+  - The team would like the length of the sample in seconds to be dynamically displayed underneath the sample title.
+  - Use the below example as a reference:
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\src\css\style.css">
+    <title>Exercise 5</title>
+</head>
+<body>
+  <script type="text/javascript" src=".\src\js\index.js"></script>
+  <header>
+    Audio Sampler
+  </header>
+    
+  <main>
+    <article>
+      <div class="article-header">Text-to-Speech converter</div>
+      <br><br>
+      <textarea id="text-input" placeholder="Enter text to convert into speech..." rows="15" cols="65"></textarea>
+      <!-- The <textarea> tag is usually used to allow users to write reviews for the creator
+        to see, but in this context, it is instead used as a way to write out the message for
+        the text to speech convertor -->
+      <br><br>
+      <button type="button" onclick="texttospeechconverter()">Try it</button>
+      <!-- the onclick property allows for a set of commands (usually in javescript)
+      to happen if the user clicks on the button or link. -->
+    </article>
+    <aside>
+
+      <section class="set1">
+        <div class="aside-header">Sample Bank 1</div>
+        <button value=".\src\Audio Sampler\Audio\any-messages.mp3" id="sound" onclick="playAudio(this.value)" >
+          <h1>1.</h1>
+          Any messages
+          <br>0.99
+        </button>
+
+        <button value=".\src\Audio Sampler\Audio\biggest-fan.mp3" onclick="playAudio(this.value)" >
+          <h1>2.</h1>
+          Biggest fan
+          <br>3.42
+        </button>
+
+        <button value=".\src\Audio Sampler\Audio\can-I-have-a-sniff.mp3" onclick="playAudio(this.value)" >
+          <h1>3.</h1>
+          Can I have a sniff
+          <br>0.89
+        </button>
+
+
+        <button value=".\src\Audio Sampler\Audio\bit-of-a-job-for-you.mp3" onclick="playAudio(this.value)" >
+          <h1>4.</h1>
+          Bit of a job for you
+          <br>1.44
+        </button>
+
+
+        <button value=".\src\Audio Sampler\Audio\email-of-the-evening.mp3" onclick="playAudio(this.value)" >
+          <h1>5.</h1>
+          Email of the evening
+          <br>3.68
+        </button>
+
+        <button value=".\src\Audio Sampler\Audio\i-ate-a-scotch-egg.mp3" onclick="playAudio(this.value)" >
+          <h1>6.</h1>
+          I ate a scotch egg
+          <br>1.91
+        </button>
+
+
+        <button value=".\src\Audio Sampler\Audio\im-confused.mp3" onclick="playAudio(this.value)" >
+          <h1>7.</h1>
+          I'm confused
+          <br>1.83
+        </button>
+
+        <button value=".\src\Audio Sampler\Audio\conman.mp3" onclick="playAudio(this.value)" >
+          <h1>8.</h1>
+          Conman
+          <br>1.23
+        </button>
+
+        <button value=".\src\Audio Sampler\Audio\massacre-ew-not-playing-that-again.mp3" onclick="playAudio(this.value)" >
+          <h1>9.</h1>
+          Ew not playing that again
+          <br>2.17
+        </button>
+        <button class="ca" onclick="forward()">Next page</button>
+      </section>
+      
+      <!-- These class sets are used to separate the content of the soundboard to either
+      be in the first page or the second page. It uses the css display: none and inline
+      to show and hide the content, more will be explained in the javascript -->
+
+      <section class="set2">
+        <div class="aside-header">Sample Bank 2</div>
+        <button value=".\src\Audio Sampler\Audio\ah-ha.mp3" id="sound" onclick="playAudio(this.value)" >
+          <h1>10.</h1>
+          Ah-Ha
+          <br>1.4
+        </button>
+
+        <button value=".\src\Audio Sampler\Audio\dan.mp3" onclick="playAudio(this.value)" >
+          <h1>11.</h1>
+          Dan
+          <br>0.5
+        </button>
+
+        <button value=".\src\Audio Sampler\Audio\back-of-the-net.mp3" onclick="playAudio(this.value)" >
+          <h1>12.</h1>
+          Back of the net
+          <br>1.02
+        </button>
+
+
+        <button value=".\src\Audio Sampler\Audio\bang-out-of-order.mp3" onclick="playAudio(this.value)" >
+          <h1>13.</h1>
+          Bang out of order
+          <br>1.38
+        </button>
+
+
+        <button value=".\src\Audio Sampler\Audio\jurassic-park.mp3" onclick="playAudio(this.value)" >
+          <h1>14.</h1>
+          Jurassic Park
+          <br>1.54
+        </button>
+
+        <button value=".\src\Audio Sampler\Audio\smell-my-cheese.mp3" onclick="playAudio(this.value)" >
+          <h1>15.</h1>
+          Smell my cheese
+          <br>4.41
+        </button>
+
+
+        <button value=".\src\Audio Sampler\Audio\goal.mp3" onclick="playAudio(this.value)" >
+          <h1>16.</h1>
+          Goal
+          <br>3.66
+        </button>
+
+        <button value=".\src\Audio Sampler\Audio\kiss-my-face.mp3" onclick="playAudio(this.value)" >
+          <h1>17.</h1>
+          Kiss my face
+          <br>1.10
+        </button>
+
+        <button value=".\src\Audio Sampler\Audio\hello-partridge.mp3" onclick="playAudio(this.value)" >
+          <h1>11.</h1>
+          Hello Partridge
+          <br>0.91
+        </button>
+        <button class="ca" onclick="backward()">Previous page</button>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>

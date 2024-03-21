@@ -1,0 +1,94 @@
+<!--
+RGB Colour Guessing Game (Bonus - Optional)
+Create an interactive RGB colour guessing game. The game should:
+    Present the user with the rgb value they need to guess
+    Present the user with at least three possible colour options including the correct colour.
+    The possible options should be interactive and when clicked inform the user if they were correct or incorrect.
+    The game should continue until they player has run out of lives
+    At the end of the game the user should be presented with a final score and ability to replay the game
+    Include index.html, style.css and index.js files.
+    Include Comments throughout every file.
+    Implement clean and professional creative styling.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href=".\src\css\style.css">
+        <title>Exercise 6</title>
+    </head>
+
+<body>
+    <header>
+        <h2>Let's Play</h2>
+        <div class="header-title">The RGB Color Guessing Game!</div>
+    </header>
+    
+    <main>
+        <aside>
+            Difficulty:
+            <br><br>
+            <div class="button-set">
+                <button id="easyBtn">Easy</button>
+                <button id="mediumBtn">Medium</button>
+                <button id="hardBtn" class="selected">Hard</button>
+                <br><br>
+            </div>
+            <br>
+            Previous Scores: <!-- This is a sample of what I would've wanted to implement -->
+            <div id="score-container">
+                <div class="row">
+                    <div class="difficulty">1. Easy</div><div class="score">15</div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="difficulty">2. Medium</div><div class="score">13</div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="difficulty">3. Medium</div><div class="score">10</div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="difficulty">4. Medium</div><div class="score">6</div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="difficulty">5. Hard</div><div class="score">3</div>
+                </div>
+        </aside>
+
+        <article>
+            <h3>Guess your color!</h3>
+            <div class="game-values">
+                Lives: <span id="current-lives"></span>
+                &emsp;
+                <span id="message"></span>
+                &emsp;
+                Score: <span id="score-message"></span>
+                <!-- &emsp; is used to add empty spacing to each element. Particularly 
+                4 spaces, &ensp; for 2 spaces, and &nbsp; for 1 space -->
+
+                <br>
+                <span id="colorDisplay">RGB</span>
+            </div>
+            <div id="container">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+            <br><br><br><br><br><br><br><br><br>
+            <button id="continueBtn">Continue</span>
+        </article>
+    </main>
+    <script type="text/javascript" src=".\src\js\index.js"></script>
+</body>
+</html>

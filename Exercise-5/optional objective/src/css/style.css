@@ -1,0 +1,92 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: blue;
+}
+
+header {
+    background-color: white;
+    color:red;
+    text-align: center;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main {
+    background-color: aliceblue;
+    height: 480px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 15px;
+}
+
+article {
+    width:50%;
+    height: 95%;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+article button {
+    background-color: white;
+    color: black;
+    box-shadow: 5px black;
+    width:30%;
+    height:40px; 
+}
+
+.article-header {
+    background-color: red;
+    color: white;
+    margin-right: 30px;
+    text-align: center;
+}
+
+aside {
+    width:50%;
+    height: 95%;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside-header {
+    background-color: white;
+    color:red;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+section button {
+    background-color: white;
+    color: black;
+    box-shadow: 5px black;
+    width:30%;
+    height:80px;
+    margin-bottom: 10px;
+}
+
+.set1 {
+    display: inline;
+}
+
+.set2 {
+    display: none
+}
+
+.ca {
+    text-align: center;
+}

@@ -1,0 +1,114 @@
+header { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* The box-sizing property allows us to include the padding and border in an element's 
+    total width and height.*/
+    min-height: 70px;
+    background-color: #17072b;
+    color: #FFFFFF;
+}
+
+h1 {
+    text-decoration-line: underline;
+}
+
+.main {
+    height: 150px;
+    width: 100%;
+    font-family: 'Tahoma';
+    font-size: 25px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.primary-navigation {
+    display: flex;
+}
+
+.secondary-navigation {
+    display: flex;
+    gap: 2rem;
+    margin:auto;
+    margin-left: 27%;
+}
+
+.secondary-navigation li, .secondary-navigation li a  {
+    text-decoration: none;
+    list-style: none;
+}
+
+a:link {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+a:visited {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+.content {
+    font-family: 'Arial';
+    height: 435px;
+    width: 100%;
+    font-size: 20px;
+    margin: auto;
+    gap: 2rem;
+    /* The gap property is used to add an gutter between rows and columns */
+    align-items: top;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+article {
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #FFFFFF;
+    color: #000000;
+    width:65%;
+    height: 425px;
+    text-align: justify;
+}
+
+section {
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #172d67;
+    color: #FFFFFF;
+    width:35%;
+    height: 410px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: '- ';
+    /* This sets a particular style type to be used rather than the default settings. */
+}
+
+.side-bar-images {
+    text-align: center;
+}
+
+footer {
+    background-color: #8c15e9;
+    color: #FFFFFF;
+    text-align: center;
+}

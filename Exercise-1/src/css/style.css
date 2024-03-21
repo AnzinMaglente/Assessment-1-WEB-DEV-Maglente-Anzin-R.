@@ -1,0 +1,138 @@
+/* The CSS or Cascading Style Sheet is used to style the html file, particularly how 
+content is displayed. */
+
+header { 
+    /* This tag is to specify how the header class is supposed to look like. 0 is used to
+    reset the margin to any device which fixes any formatting issues that may occur on
+    diffferent devices */
+    margin: 0; 
+    /* The margin property is used to specify the spacing between elements. */
+    padding: 0; 
+    /* The padding property is used to specify the spacing between elements inside any 
+    defined border. */
+    box-sizing: border-box; 
+    /* The box-sizing property allows the padding property to work alongside the element's 
+    total width and size. */
+    font-family: 'Times New Roman'; 
+    /* The font-family property changes the font of the text to something specific, 
+    the default font is whatever the user specifies in the broswer's preferences. */
+    min-height: 60px; 
+    /* min-height, min-width, max-height, and max-width property specifies the 
+    maximum/minimum size of the class. */
+    background-color: rgb(213, 213, 213); 
+    /* The background-color property specifies the color of the background. */
+    color: black; 
+    /* The color property specifies the html's text color. */
+}
+
+.main {
+    height: 60px; 
+    /* Width and height property specifies a certain distance that the html will try to 
+    attain, if it isn't possible, then it will revert to something smaller. */
+    width: 1300px; 
+    max-width: 1200px;
+    display: flex; /* The display property alters how the content is displayed on the html. 
+    Flex behaves like a block-level element wherein the content is according to the flexbox 
+    model. */
+    justify-content: space-between; 
+    /* justify-content describe the spacing between the content, space between distributes 
+    the spacing with the consideration of total width of the element. */
+    align-items: center; 
+    /* align-item specifies the alignment for items inside a flexbox or grid container. 
+    this centers the item to the center of the element */
+    margin: auto; 
+    /* auto margin centers the elements horizontally and vertically */
+}
+
+.primary-navigation {
+    display: flex;
+}
+
+.secondary-navigation {
+    display: flex;
+    gap: 2rem; 
+    /* gap sets the gap/gutter between contents. 1 rem is equivalent to 16px. */
+}
+
+.secondary-navigation li, .secondary-navigation li a  {
+/* You may notceid that [li] and [li a] is listed here, this is to specify that those
+tags will be styled differently from other classes that uses the <li> tag and <a> tag */
+    text-decoration: none; 
+    /* text-decoration sets any decorative lines on text. like underline, wavy, and 
+    overline. Here it is made to ensure that there aren't any decoration*/
+    list-style: none; 
+    /* list style specifies the symbol used to display a list. This is used to make 
+    sure that it does not have any symbol */
+}
+
+.title{
+    padding-top: 15px;
+    padding-bottom: 2px;
+    text-align: center; 
+    /* Text-align sets the alignment of text. Center horizontally aligns the text to the
+    middle part of the element */
+}
+
+.description{
+    padding-bottom: 2px;
+    text-align: center;
+}
+
+.basic_information {
+    height: 60px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 5px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.main_body {
+    height: 300px;
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    /* align-items top is used to make sure that no elements are misaligned to other sides
+    such as the bottom, left, or right. */
+    margin: auto;
+    gap: 2rem;
+}
+
+.ingredients {
+    background-color: lightgrey;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 50%;
+}
+
+.ingredients li {
+    text-decoration: none;
+    list-style: square;
+}
+
+.procedure {
+    padding-bottom: 5px;
+    width: 50%;
+}
+
+.procedure li {
+    text-decoration: none;
+    list-style: decimal;
+}
+
+.Tips_Variations {
+    height: 50px;
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    margin: auto;
+    gap: 2rem;
+}

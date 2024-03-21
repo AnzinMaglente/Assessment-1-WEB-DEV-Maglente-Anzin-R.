@@ -1,0 +1,143 @@
+<!--
+Study planner (Bonus - Optional)
+Imagine you have been employed to build a single-page web application that manages a study plan for the Web Development module on the Creative Computing course. Use HTML and CSS to mock-up what this application would look like, without adding any interactivity. You must include:
+    Wireframe (add image to the directory);
+    Header, Navigation menu, main content and a footer;
+    The main content must be split into two or three columns;
+    Five demo items;
+    Your HTML should use semantically correct elements;
+    An external style.css file;
+    The use of at least one button;
+    The page does not need to be interactive;
+    You should focus on the structure and visual layout of the page, but also consider design too;
+    Commenting throughout.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\src\css\style.css">
+    <title>Exercise 4</title>
+</head>
+
+<body>
+    <header>
+        <div class="main-nav">
+            <div class="nav-title1">
+                <img src=".\src\photos\The TimeTable.png" width="100px" height="100px">
+                <div class="nav-title2">
+                    <div class="la"><h1>The</h1></div>
+                    <div class="ra"><h1>Timetable</h1></div>
+                </div>
+            </div>
+            <nav class="primary-navigation">
+                <ul class="secondary-navigation">
+                    <li><h1><a href="">Home</a></h1></li>
+                    <li><h1><a href="">About</a></h1></li>
+                    <li><h1><a href="">Contact</a></h1></li>
+                    <li><h1><a href="">Settings</a></h1></li>
+                    <li><button type="button"><h1><a href="">Account</a></h1></li></button>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <h1>&#8592 March &#8594</h1>
+            2024
+            <br><br>
+            <div class="article-days">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Monday &nbsp; &nbsp; &nbsp;
+                Tuesday &nbsp; &nbsp; 
+                Wednesday &nbsp; &nbsp; 
+                Thursday &nbsp; &nbsp; &nbsp; &nbsp;
+                Friday &nbsp; &nbsp; &nbsp; &nbsp;
+                Saturday &nbsp; &nbsp; &nbsp;
+                Sunday
+                
+                <div class="article-tasks">
+                    <div class="week">
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                    </div>
+                    <div class="week">
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                    </div>
+                    <div class="week">
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                    </div>
+                    <div class="week">
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <aside>
+            <h1>List of Tasks:</h1>
+            <div class="rectangle">
+                <b>Task 1: An Academic Essay on Benjamin Franklin</b>
+                <br>
+                Brief: Discuss the life and accomplishments of Benjamin Franklin in the Scientific community.
+                <div class="RecRa">
+                    ...
+                </div>
+            </div>
+            <div class="rectangle">
+                <b>Task 2: A Stop Motion Animation</b>
+                <br>
+                Brief: Form a group of five and create a 1-3 minute long stop motion animation using various tools in your daily life.
+                <div class="RecRa">
+                    ...
+                </div>
+            </div>
+            <div class="rectangle">
+                <b>Task 3: Poster-Making</b>
+                <br>
+                Brief: Create a poster on global warning and what you can do to help lessen the problem, make sure to make it as persuasive as possible.
+                <div class="RecRa">
+                    ...
+                </div>
+            </div>
+            <div class="rectangle">
+                <b>Project 1: Academic Research</b>
+                <br>
+                Brief: In a group of six, create a research paper on the effects of standardized testing and compare it to authentic assessments.
+                <div class="RecRa">
+                    ...
+                </div>
+            </div>
+            <div class="rectangleRa">
+                Add Tasks
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        @ 2020-2024 The Timetable | Terms of Service | Privacy Policy
+    </footer>
